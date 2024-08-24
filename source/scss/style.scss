@@ -1,0 +1,454 @@
+// fonts links@font-face {
+ 
+
+// VARIABLES-------
+// COLORS-----------
+// FONTS ------
+
+$carousel-width: 100%;
+$carousel-max-width: 800px;
+$carousel-height: 400px;
+$caption-bg-color: rgba(0, 0, 0, 0.5);
+$indicator-color: #e20d0d;
+// $nav-icon-color: white;
+// // // Variables para colores
+// // $navbar-bg: #f12c4a; // Fondo suave en tonos rojos
+// // $navbar-brand-color: #b71c1c; // Rojo oscuro para la marca
+// // $nav-link-color: #b71c1c; // Rojo oscuro para los enlaces
+// // $nav-link-hover-color: #f44336; // Rojo brillante al pasar el ratón
+// // $nav-link-disabled-color: #ffcdd2; // Rojo suave para el enlace deshabilitado
+// // $toggler-icon-color: #b71c1c; // Color del ícono del toggler
+// // $primary-color: #333;
+// // $secondary-color: #555;
+// // $background-color: #f8f9fa;
+// // $hover-color: #007bff;
+
+
+
+// Variables
+$primary-color: #333;
+$secondary-color: #555;
+$background-color: #eb2626;
+$hover-color: #d7101a;
+$primary-color1: #333;
+$secondary-color1: #555;
+$background-color1: #f8f9fa;
+$star-color: #ffcc00;
+$border-radius: 10px;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+// STYLES----------------
+// Estilos para el cuerpo y contenedores principales
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Estilos para la barra de navegación
+.navbar {
+  background-color: $primary-color;
+
+  .navbar-brand {
+    color: $hover-color;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: darken($hover-color, 10%);
+    }
+  }
+
+  .nav-link {
+    color: $secondary-color;
+    margin-left: 15px;
+
+    &:hover {
+      color: $hover-color;
+    }
+
+    &.active {
+      color: $hover-color;
+      font-weight: bold;
+    }
+  }
+
+  .logo_img {
+    max-height: 50px;
+    margin-right: 15px;
+  }
+}
+
+
+// Estilos para secciones de información
+
+.section-nos,
+.section-info,
+.section-commits
+{
+  padding: 10%;
+  text-align: center;
+
+  span {
+    font-size: 1.2rem;
+    color: $primary-color;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .album,
+  .experiencias,
+  .horarios,
+  .contact-section{
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.section-nos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.info-nos {
+  text-align: center;
+
+  .Q_nos {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+    color: #343a40;
+  }
+
+  .card {
+    max-width: 540px;
+    margin: 0 auto;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .row {
+      display: flex;
+      align-items: center;
+
+      .col-md-4 {
+        padding: 0;
+
+        img {
+          border-radius: 0.25rem 0 0 0.25rem;
+        }
+      }
+
+      .col-md-8 {
+        .card-body {
+          padding: 1rem;
+
+          .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #495057;
+          }
+
+          .card-text {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 0.5rem;
+
+            small.text-body-secondary {
+              font-size: 0.85rem;
+              color: #adb5bd;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+#carouselExampleCaptions {
+  width: $carousel-width;
+  max-width: $carousel-max-width;
+  margin: 0 auto; // Centrar el carrusel horizontalmente
+
+  .carousel-inner {
+    img {
+      width: 100%;
+      height: $carousel-height;
+      object-fit: cover; // Recorta la imagen para llenar el contenedor
+    }
+  }
+
+  .carousel-caption {
+    background-color: $caption-bg-color;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .carousel-indicators {
+    [data-bs-target] {
+      background-color: $indicator-color; // Color azul para los indicadores
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%); // Cambia el color a blanco
+  }
+}
+
+// Media query para pantallas pequeñas
+@media (max-width: 768px) {
+  #carouselExampleCaptions {
+    .carousel-inner {
+      img {
+        height: 250px; // Tamaño de imagen más pequeño en pantallas pequeñas
+      }
+    }
+  }
+    
+}
+
+// estilos carrusel de comentarios
+#carouselOpinions {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+  .carousel-inner {
+    display: flex;
+    justify-content: space-between;
+
+    .CarouselItem {
+      padding: 20px;
+      background-color: $background-color1;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+      text-align: center;
+
+      // Estilos para las estrellas de calificación
+      .stars {
+        color: $star-color;
+        font-size: 1.5rem;
+      }
+
+      // Estilos para la opinión del usuario
+      .opinion {
+        font-size: 1rem;
+        font-style: italic;
+        color: $primary-color1;
+        margin: 15px 0;
+      }
+
+      // Estilos para el nombre del usuario
+      .user-name {
+        font-weight: bold;
+        color: $secondary-color1;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  // Estilos para los botones de navegación
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%);
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+
+  // Estilos para los indicadores
+  .carousel-indicators [data-bs-target] {
+    background-color: $primary-color1;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+
+  
+}
+.btn{
+  background-color: #c60710;
+  margin-top: 30px;
+}
+
+
+#calendar{
+  padding: 5%;
+}
+.horarios{
+  font-size: 1.2rem;
+  color: $primary-color;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+// estilos tabla horarios 
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+  
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      vertical-align: top;
+      border: 1px solid #dee2e6;
+    }
+  
+    thead {
+      background-color: #343a40;
+      color: #fff;
+  
+      th {
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+    }
+  
+    tbody {
+      tr {
+        &:nth-of-type(odd) {
+          background-color: #f8f9fa;
+        }
+  
+        &:hover {
+          background-color: #e9ecef;
+        }
+      }
+      
+      .table-group-divider {
+        border-top: 2px solid #dee2e6;
+      }
+    }
+  
+    th[scope="row"] {
+      background-color: #c60710;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  #contact-conteiner{
+  padding: 5%;
+  text-align: center;
+  }
+  .contact-section{
+    font-size: 1.2rem;
+    color: $primary-color;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  #contact-social {
+    padding: 50px 0;
+    background-color: #333;
+    color: white;
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            
+            .social-icon {
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                transition: transform 0.3s ease;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    filter: invert(1); // Hace los íconos blancos en fondo oscuro
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+// Media query para pantallas pequeñas
+@media (max-width: 768px) {
+  .section-nos{
+    img{
+      height: 250px;
+    }
+  }
+  #carouselExampleCaptions {
+    .carousel-inner {
+      img {
+        height: 250px; // Tamaño de imagen más pequeño en pantallas pequeñas
+      }
+    }
+  }
+  
+  .section-commits{
+    .carousel-item{
+      height: 250px;
+    }
+  }
+
+  #calendar{
+    table{
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+  footer {
+    background-color: $primary-color;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+// }

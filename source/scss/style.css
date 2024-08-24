@@ -1,0 +1,316 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eb2626;
+  margin: 0;
+  padding: 0;
+}
+body .container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body .navbar {
+  background-color: #333;
+}
+body .navbar .navbar-brand {
+  color: #d7101a;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+body .navbar .navbar-brand:hover {
+  color: #a80c14;
+}
+body .navbar .nav-link {
+  color: #555;
+  margin-left: 15px;
+}
+body .navbar .nav-link:hover {
+  color: #d7101a;
+}
+body .navbar .nav-link.active {
+  color: #d7101a;
+  font-weight: bold;
+}
+body .navbar .logo_img {
+  max-height: 50px;
+  margin-right: 15px;
+}
+body .section-nos,
+body .section-info,
+body .section-commits {
+  padding: 10%;
+  text-align: center;
+}
+body .section-nos span,
+body .section-info span,
+body .section-commits span {
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+body .section-nos .album,
+body .section-nos .experiencias,
+body .section-nos .horarios,
+body .section-nos .contact-section,
+body .section-info .album,
+body .section-info .experiencias,
+body .section-info .horarios,
+body .section-info .contact-section,
+body .section-commits .album,
+body .section-commits .experiencias,
+body .section-commits .horarios,
+body .section-commits .contact-section {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body .section-nos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+body .info-nos {
+  text-align: center;
+}
+body .info-nos .Q_nos {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: block;
+  color: #343a40;
+}
+body .info-nos .card {
+  max-width: 540px;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+body .info-nos .card .row {
+  display: flex;
+  align-items: center;
+}
+body .info-nos .card .row .col-md-4 {
+  padding: 0;
+}
+body .info-nos .card .row .col-md-4 img {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+body .info-nos .card .row .col-md-8 .card-body {
+  padding: 1rem;
+}
+body .info-nos .card .row .col-md-8 .card-body .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #495057;
+}
+body .info-nos .card .row .col-md-8 .card-body .card-text {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+body .info-nos .card .row .col-md-8 .card-body .card-text small.text-body-secondary {
+  font-size: 0.85rem;
+  color: #adb5bd;
+}
+body #carouselExampleCaptions {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+body #carouselExampleCaptions .carousel-inner img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #carouselExampleCaptions .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+body #carouselExampleCaptions .carousel-indicators [data-bs-target] {
+  background-color: #e20d0d;
+}
+body #carouselExampleCaptions .carousel-control-prev-icon,
+body #carouselExampleCaptions .carousel-control-next-icon {
+  filter: invert(100%);
+}
+@media (max-width: 768px) {
+  body #carouselExampleCaptions .carousel-inner img {
+    height: 250px;
+  }
+}
+body #carouselOpinions {
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+body #carouselOpinions .carousel-inner {
+  display: flex;
+  justify-content: space-between;
+}
+body #carouselOpinions .carousel-inner .CarouselItem {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+body #carouselOpinions .carousel-inner .CarouselItem .stars {
+  color: #ffcc00;
+  font-size: 1.5rem;
+}
+body #carouselOpinions .carousel-inner .CarouselItem .opinion {
+  font-size: 1rem;
+  font-style: italic;
+  color: #333;
+  margin: 15px 0;
+}
+body #carouselOpinions .carousel-inner .CarouselItem .user-name {
+  font-weight: bold;
+  color: #555;
+  margin-top: 10px;
+}
+body #carouselOpinions .carousel-control-prev-icon,
+body #carouselOpinions .carousel-control-next-icon {
+  filter: invert(100%);
+  width: 2rem;
+  height: 2rem;
+}
+body #carouselOpinions .carousel-control-prev,
+body #carouselOpinions .carousel-control-next {
+  width: 5%;
+}
+body #carouselOpinions .carousel-indicators [data-bs-target] {
+  background-color: #333;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+body .btn {
+  background-color: #c60710;
+  margin-top: 30px;
+}
+body #calendar {
+  padding: 5%;
+}
+body .horarios {
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body .table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+body .table th, body .table td {
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #dee2e6;
+}
+body .table thead {
+  background-color: #343a40;
+  color: #fff;
+}
+body .table thead th {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+body .table tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+body .table tbody tr:hover {
+  background-color: #e9ecef;
+}
+body .table tbody .table-group-divider {
+  border-top: 2px solid #dee2e6;
+}
+body .table th[scope=row] {
+  background-color: #c60710;
+  font-weight: bold;
+  text-align: center;
+}
+body #contact-conteiner {
+  padding: 5%;
+  text-align: center;
+}
+body .contact-section {
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body #contact-social {
+  padding: 50px 0;
+  background-color: #333;
+  color: white;
+}
+body #contact-social .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+body #contact-social .container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+body #contact-social .container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+body #contact-social .container .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+body #contact-social .container .social-icons .social-icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+body #contact-social .container .social-icons .social-icon img {
+  width: 100%;
+  height: auto;
+  filter: invert(1);
+}
+body #contact-social .container .social-icons .social-icon:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  body .section-nos img {
+    height: 250px;
+  }
+  body #carouselExampleCaptions .carousel-inner img {
+    height: 250px;
+  }
+  body .section-commits .carousel-item {
+    height: 250px;
+  }
+  body #calendar table {
+    width: 250px;
+    height: 250px;
+  }
+}
+body footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */
